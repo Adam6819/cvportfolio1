@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", system-ui;
+  width: auto;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+/* 
+header {
+  align-content: center;
+} */
+
+
+.layout {
+  margin: 3rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: rgb(28, 24, 24);
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  background-color: rgb(219, 223, 227);
+}
+
+.btn:hover {
+  letter-spacing: 10px;
+  transition: all 0.4s ease 0s;
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  background-color: aqua;
+  height: 130%;
+}
+
+
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+
+footer {
+  background-color: rgb(219, 223, 227);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  bottom: 0;
+  width: auto;
+  font-size: 20px;
+  padding: 1rem 0rem 1rem 0rem;
+  margin-top: auto;
+}
+
+
+
+@Media(max-width: 402px) {
+  body, main, header, nav, ul, li, a, button, section, h1 {
+flex-direction: column;
+    font-size: 16px;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 20rem;
+    height: 3rem;
+  }
+
+  .btn:hover {
+    letter-spacing: 10px;
+    transition: all 0.4s ease 0s;
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    background-color: rgb(255, 38, 0);
+    height: 130%;
+  }
+
+
+footer {
+  margin-top: auto;
+}
+
+}
+
